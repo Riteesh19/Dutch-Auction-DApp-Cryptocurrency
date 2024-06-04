@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  background-color: #ffe8d6; /* A light peach background for the whole app */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  filter: drop-shadow(0 0 0.75rem #ffb997); /* Add a drop shadow to the logo */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ff8474; /* Change the header to a warm red */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #6a0572; /* Dark purple for the text color */
+}
+
+.App-link {
+  color: #61dafb;
+  transition: color 0.5s ease-in-out; /* Add a smooth color transition */
+}
+
+.App-link:hover {
+  color: #9c89b8; /* Change link color on hover */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Additional Styles for Components */
+/* Giving each component a different background color */
+.AuctionDeployment, .AuctionLookup, .BidSubmission {
+  background-color: #ffffff;
+  border-radius: 15px; 
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adding some shadow to the boxes */
+}
+
